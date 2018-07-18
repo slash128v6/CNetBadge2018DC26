@@ -14,6 +14,7 @@ Requires the FastLED library to be installed in the Arduino IDE.
 * Once upload is complete the NeoPixels will start to cycle through the patterns.
 
 Operation:
+
 [Press] the SW1 button to cycle through available effects
 [Press and hold] the SW1 button (one second) to switch between auto and manual mode
 * Auto Mode (two green blinks): Effects automatically cycle over time per cycleTime
