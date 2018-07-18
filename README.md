@@ -1,10 +1,10 @@
 @slash128 2018
 CompuNet DC26
 
-To upload the sketch from the Arduino IDE:
+Programming the Badge from the Arduino IDE:
 
-Requires the FastLED library to be installed in the Arduino IDE.
-* The FastLED library can be found by searching under the "Sketch/Include Library/Manage Libraries" menu.
+* Download this repo and unzip in your Arduino sketch folder
+* Install the FastLED library under "Sketch/Include Library/Manage Libraries" menu.
 * Set the power switch to "USB" and connect to computer via USB. Note the COM port detected.
 * Under the "Tools/Board" menu select the “Arduino Pro or Pro Mini” option.
 * Under the "Tools/Processor" menu select “ATmega328 (5V, 16MHz)”.
@@ -13,7 +13,7 @@ Requires the FastLED library to be installed in the Arduino IDE.
 * After the sketch compiles it should upload and the "TX/RX" lights will flash.
 * Once upload is complete the NeoPixels will start to cycle through the patterns.
 
-Operation:
+Badge Operation:
 
 [Press] the SW1 button to cycle through available effects
 [Press and hold] the SW1 button (one second) to switch between auto and manual mode
