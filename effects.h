@@ -108,6 +108,26 @@ void rotateWhite() {
     }
 }
 
+// Strobe all white
+void strobeWhite() {
+  
+  // startup tasks
+  if (effectInit == false) {
+    effectInit = true;
+    allLedOn = true;
+    effectDelay = 32;
+  }
+
+  if (allLedOn) {
+    fillAll(CRGB::White);
+    allLedOn = false;
+  } else {
+    fillAll(CRGB::Black);
+    allLedOn = true;
+  }
+  
+}
+
 // Triple Sine Waves
 void threeSine() {
 
