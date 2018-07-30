@@ -64,7 +64,7 @@
 #include "XYmatrix.h"
 #include "utils.h"
 #include "effects.h"
-#include "buttons.h"
+#include "input.h"
 
 
 // list of functions that will be displayed
@@ -111,8 +111,8 @@ void setup() {
   FastLED.setBrightness( scale8(currentBrightness, MAXBRIGHTNESS) );
 
   // configure input buttons
-  pinMode(MODEBUTTON, INPUT_PULLUP);
-  pinMode(BRIGHTNESSBUTTON, INPUT_PULLUP);
+  pinMode(MODEBTN, INPUT_PULLUP);
+  pinMode(BRIGHTBTN, INPUT_PULLUP);
 
 }
 
