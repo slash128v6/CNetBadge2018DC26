@@ -1,18 +1,20 @@
+
 @slash128 2018
 CompuNet DC26
 
 
 Badge Operation:
 
-[Press] the SW1 button to cycle through available effects
+Press the left button to cycle through available effects
 
-[Press and hold] the SW1 button (one second) to switch between auto and manual mode
+Press and hold the left button for one second to switch between auto and manual mode
+
 * Auto Mode (two green blinks): Effects automatically cycle over time per cycleTime
 * Manual Mode (two red blinks): Effects must be selected manually with SW1 button
 
-[Press] the SW2 button to cycle through available brightness levels
+Press the right button to cycle through available brightness levels
 
-[Press and hold] the SW2 button (one second) to reset brightness to startup value
+Press and hold the right button for one second to reset brightness to startup value
 
 Brightness, selected effect, and auto-cycle are saved in EEPROM after a delay
 The badge will automatically start up with the last-selected settings
