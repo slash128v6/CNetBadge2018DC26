@@ -10,7 +10,7 @@
 //   Press and hold the left button for one second to switch between auto and manual mode
 //
 //   * Auto Mode (two green blinks): Effects automatically cycle over time per cycleTime
-//   * Manual Mode (two red blinks): Effects must be selected manually with SW1 button
+//   * Manual Mode (two red blinks): Effects must be selected manually with left button
 //
 //   Press the right button to cycle through available brightness levels
 //
@@ -22,7 +22,7 @@
 //
 //   Programming the Badge from the Arduino IDE:
 //   
-//   * Download the badge repo and unzip in your Arduino sketch folder
+//   * Download the badge repo and unzip in your Arduino sketch folder:
 //   * https://github.com/slash128v6/CnetBadge2018DC26
 //   * Install the FastLED library under "Sketch/Include Library/Manage Libraries" menu.
 //   * Set the power switch to "USB" and connect to computer via USB.
