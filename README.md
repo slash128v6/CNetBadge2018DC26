@@ -5,6 +5,8 @@ CompuNet DC26
 
 Badge Operation:
 
+The main power switch is on the back, slide up for battery power, down for USB power
+
 Press the left button to cycle through available effects
 
 Press and hold the left button for one second to switch between auto and manual mode

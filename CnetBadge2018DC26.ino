@@ -4,6 +4,8 @@
 //
 //   
 //   Badge Operation:
+//
+//   The main power switch is on the back, slide up for battery power, down for USB power
 //   
 //   Press the left button to cycle through available effects
 //
