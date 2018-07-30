@@ -1,18 +1,7 @@
-//   @slash128 2018
+//
+//   @slashsa43w128 2018
 //   CompuNet DC26
 //
-//   Programming the Badge from the Arduino IDE:
-//   
-//   * Download this repo and unzip in your Arduino sketch folder
-//   * Install the FastLED library under "Sketch/Include Library/Manage Libraries" menu.
-//   * Set the power switch to "USB" and connect to computer via USB.
-//   * Note the COM port detected in Device Manager.
-//   * Under the "Tools/Board" menu select the “Arduino Pro or Pro Mini” option.
-//   * Under the "Tools/Processor" menu select “ATmega328 (5V, 16MHz)”.
-//   * Under the "Tools/Port" menu select the COM port detected when plugging in the board to USB.
-//   * Click the "Upload" button.
-//   * After the sketch compiles it should upload and the "TX/RX" lights will flash.
-//   * Once upload is complete the NeoPixels will start to cycle through the patterns.
 //   
 //   Badge Operation:
 //   
@@ -26,6 +15,22 @@
 //
 //   Brightness, selected effect, and auto-cycle are saved in EEPROM after a delay
 //   The badge will automatically start up with the last-selected settings
+//
+//
+//   Programming the Badge from the Arduino IDE:
+//   
+//   * Download the badge repo and unzip in your Arduino sketch folder
+//   * https://github.com/slash128v6/CnetBadge2018DC26
+//   * Install the FastLED library under "Sketch/Include Library/Manage Libraries" menu.
+//   * Set the power switch to "USB" and connect to computer via USB.
+//   * Note the COM port detected in Device Manager.
+//   * Under the "Tools/Board" menu select the “Arduino Pro or Pro Mini” option.
+//   * Under the "Tools/Processor" menu select “ATmega328 (5V, 16MHz)”.
+//   * Under the "Tools/Port" menu select the COM port detected when plugging in the board to USB.
+//   * Click the "Upload" button.
+//   * After the sketch compiles it should upload and the "TX/RX" lights will flash.
+//   * Once upload is complete the NeoPixels will start to cycle through the patterns.
+//
 
 
 // RGB LED data output to LEDs is on pin 5
@@ -66,7 +71,6 @@ functionList effectList[] = {	rainbow,
 								juggle,
 								pulsar,
 								rotateWhite,
-								strobeWhite,
 								threeSine,
 								threeSineWithGlitter,
 								plasma,

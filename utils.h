@@ -11,7 +11,6 @@ unsigned long eepromMillis; // store time of last setting change
 unsigned long currentLed; // store current LED address
 unsigned long previousLed; // store previous LED address
 byte currentEffect = 0; // index to the currently running effect
-boolean allLedOn = true; // flag for state of LEDs
 boolean autoCycle = true; // flag for automatic effect changes
 boolean eepromOutdated = false; // flag for when EEPROM may need to be updated
 byte currentBrightness = STARTBRIGHTNESS; // 0-255 will be scaled to 0-MAXBRIGHTNESS
