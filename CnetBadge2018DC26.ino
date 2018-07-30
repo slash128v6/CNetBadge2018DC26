@@ -62,8 +62,8 @@
 #include <FastLED.h>
 #include <EEPROM.h>
 #include "XYmatrix.h"
-#include "utils.h"
-#include "effects.h"
+#include "util.h"
+#include "effect.h"
 #include "input.h"
 
 
