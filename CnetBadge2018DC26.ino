@@ -63,7 +63,7 @@
 #include <EEPROM.h>
 #include "XYmatrix.h"
 #include "util.h"
-#include "effect.h"
+#include "patterns.h"
 #include "input.h"
 
 
@@ -76,16 +76,6 @@ functionList effectList[] = {	rainbow,
 								juggle,
 								pulsar,
 								rotateWhite,
-								threeSine,
-								threeSineWithGlitter,
-								plasma,
-								rider,
-								glitter,
-								colorFill,
-								threeDee,
-								sideRain,
-								confetti2,
-								slantBars
 								};
 								
 const byte numEffects = (sizeof(effectList)/sizeof(effectList[0]));
@@ -144,9 +134,6 @@ void loop()
     effectList[currentEffect](); // run the selected effect function
     random16_add_entropy(1); // make the random values a bit more random-ish
   }
-
-  // run a fade effect too if the confetti2 effect is running
-  if (effectList[currentEffect] == confetti2) fadeAll(1);
 
   FastLED.show(); // send the contents of the led memory to the LEDs
 
