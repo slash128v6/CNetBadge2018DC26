@@ -6,11 +6,13 @@
 //   Badge Operation:
 //   
 //   [Press] the SW1 button to cycle through available effects
+//
 //   [Press and hold] the SW1 button (one second) to switch between auto and manual mode
 //   * Auto Mode (two green blinks): Effects automatically cycle over time per cycleTime
 //   * Manual Mode (two red blinks): Effects must be selected manually with SW1 button
 //
 //   [Press] the SW2 button to cycle through available brightness levels
+//
 //   [Press and hold] the SW2 button (one second) to reset brightness to startup value
 //
 //   Brightness, selected effect, and auto-cycle are saved in EEPROM after a delay
