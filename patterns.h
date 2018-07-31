@@ -81,7 +81,7 @@ void rotateColor() {
     effectDelay = 32;
   }
 
-    fadeToBlackBy( leds, NUM_LEDS, 20);
+    fadeToBlackBy( leds, NUM_LEDS, 16);
 
      previousLed = currentLed - 1;
       if (previousLed < 0) {
