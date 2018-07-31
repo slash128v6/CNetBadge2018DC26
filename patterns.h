@@ -1,10 +1,4 @@
 //   Pattern functions
-//   Each function should have the following components:
-//    * Must be declared void with no parameters or will break function pointer array
-//    * Check effectInit, if false then init any required settings and set effectInit true
-//    * Set effectDelay (the time in milliseconds until the next run of this effect)
-//    * All animation should be controlled with counters and effectDelay, no delay() or loops
-//    * Pixel data should be written using leds[XY(x,y)] to map coordinates to the led layout
 
 void rainbow() 
 {
@@ -61,7 +55,8 @@ void bpm()
   }
 }
 
-void juggle() {
+void juggle()
+{
   // eight colored dots, weaving in and out of sync with each other
   fadeToBlackBy( leds, NUM_LEDS, 20);
   byte dothue = 0;
@@ -72,13 +67,14 @@ void juggle() {
 }
 
 
-void rotateColor() {
+void rotateColor()
+{
   // Rotating color dot
   // startup tasks
   if (effectInit == false) {
     effectInit = true;
-    currentLed = 0;
     effectDelay = 32;
+	currentLed = 0;
   }
 
     fadeToBlackBy( leds, NUM_LEDS, 16);
@@ -95,14 +91,15 @@ void rotateColor() {
     }
 }
 
-void pulsar() {
+void pulsar()
+{
   // Pulsing white dots
-  static byte ledPos = 0;
 
   // startup tasks
   if (effectInit == false) {
     effectInit = true;
     effectDelay = 5;
+	currentLed = 0;
   }
 
   for (byte x = 0; x < kMatrixWidth; x++) {
