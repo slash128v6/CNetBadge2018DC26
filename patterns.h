@@ -70,6 +70,7 @@ void juggle()
 void rotateColor()
 {
   // Rotating color dot
+  
   // startup tasks
   if (effectInit == false) {
     effectInit = true;
@@ -83,7 +84,7 @@ void rotateColor()
       if (previousLed < 0) {
       previousLed = 16;
     }
-    leds[currentLed] += CHSV( cycleHue, 255, 192);
+    leds[currentLed] += CHSV( cycleHue, 255, 255);
     leds[previousLed] = CRGB::Black;
     currentLed++;
     if (currentLed > 16) {
