@@ -75,7 +75,7 @@ void rotateColor()
   if (effectInit == false) {
     effectInit = true;
     effectDelay = 32;
-	currentLed = 0;
+    currentLed = 0;
   }
 
     fadeToBlackBy( leds, NUM_LEDS, 16);
@@ -111,4 +111,26 @@ void pulsar()
 
   currentLed -= 4;
 
+}
+
+void colorPalette()
+{
+  // startup tasks
+  if (effectInit == false) {
+    effectInit = true;
+    effectDelay = 10;
+    FastLED.setBrightness(  BRIGHTNESS );
+    currentPalette = RainbowColors_p;
+    currentBlending = LINEARBLEND;
+  }
+  
+    ChangePalettePeriodically();
+    
+    static uint8_t startIndex = 0;
+    startIndex = startIndex + 1; /* motion speed */
+    
+    FillLEDsFromPaletteColors( startIndex);
+    
+    FastLED.show();
+    FastLED.delay(1000 / UPDATES_PER_SECOND);
 }

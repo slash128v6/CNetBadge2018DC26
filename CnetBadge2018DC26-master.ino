@@ -62,12 +62,13 @@
 #include <EEPROM.h>
 #include "XYmatrix.h"
 #include "utils.h"
+#include "colorPalette.h"
+// #include "cylon.h"
 #include "patterns.h"
 #include "input.h"
 
-
 // list of patterns that will be displayed
-functionList patternList[] = { rainbow, rainbowWithGlitter, confetti, sinelon, bpm, juggle, rotateColor, pulsar };
+functionList patternList[] = { rainbow, rainbowWithGlitter, confetti, sinelon, bpm, juggle, rotateColor, colorPalette, pulsar };
 
 const byte numPatterns = (sizeof(patternList)/sizeof(patternList[0]));
 

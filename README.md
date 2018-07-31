@@ -19,7 +19,6 @@ Press the right button to cycle through available brightness levels
 Press and hold the right button for one second to reset brightness to startup value
 
 Brightness, selected effect, and auto-cycle are saved in EEPROM after a delay
-
 The badge will automatically start up with the last-selected settings
 
 
