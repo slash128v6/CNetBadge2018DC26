@@ -67,39 +67,12 @@ void juggle()
 }
 
 
-void rotateColor()
-{
-  // Rotating color dot
-  
-  // startup tasks
-  if (effectInit == false) {
-    effectInit = true;
-    effectDelay = 32;
-    currentLed = 0;
-  }
-
-    fadeToBlackBy( leds, NUM_LEDS, 16);
-
-     previousLed = currentLed - 1;
-      if (previousLed < 0) {
-      previousLed = 16;
-    }
-    leds[currentLed] += CHSV( cycleHue, 255, 255);
-    leds[previousLed] = CRGB::Black;
-    currentLed++;
-    if (currentLed > 16) {
-      currentLed = 0;
-    }
-}
-
-
 void colorPalette()
 {
   // startup tasks
   if (effectInit == false) {
     effectInit = true;
     effectDelay = 10;
-    FastLED.setBrightness(  BRIGHTNESS );
     currentPalette = RainbowColors_p;
     currentBlending = LINEARBLEND;
   }

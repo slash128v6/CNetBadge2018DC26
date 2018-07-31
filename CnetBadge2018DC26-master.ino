@@ -68,7 +68,7 @@
 #include "input.h"
 
 // list of patterns that will be displayed
-functionList patternList[] = { rainbow, rainbowWithGlitter, confetti, sinelon, bpm, juggle, rotateColor, colorPalette };
+functionList patternList[] = { rainbow, rainbowWithGlitter, confetti, sinelon, bpm, juggle, colorPalette };
 
 const byte numPatterns = (sizeof(patternList)/sizeof(patternList[0]));
 
